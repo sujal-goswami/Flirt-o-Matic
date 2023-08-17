@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Pickup Line Generator</title>
+</head>
+<body>
+    <h1>AI Pickup Line Generator</h1>
+    <form action="/" method="post">
+        <input type="text" name="user_input" placeholder="Enter a prompt..." required>
+        <button type="submit">Generate Pickup Line</button>
+    </form>
+    {% if pickup_line %}
+        <p>{{ pickup_line }}</p>
+        <button onclick="location.reload()">Generate Again</button>
+    {% endif %}
+</body>
+</html>
